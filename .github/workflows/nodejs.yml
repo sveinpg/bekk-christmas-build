@@ -1,8 +1,6 @@
 name: Deploy netlify build
 
-on:
-  schedule:
-    - cron: "10 11 * * *"
+on: push
 
 jobs:
   deploy:
