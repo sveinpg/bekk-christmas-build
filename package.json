@@ -1,0 +1,14 @@
+{
+  "name": "netlify-build",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "netlify": "^2.4.8"
+  }
+}
