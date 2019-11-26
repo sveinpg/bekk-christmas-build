@@ -1,7 +1,7 @@
 name: Scheduled build
-on:
-  schedule:
-    - cron: "0 02 * * *"
+#on:
+#  schedule:
+#    - cron: "0 02 * * *"
 
 jobs:
   build:
