@@ -1,8 +1,6 @@
 name: Scheduled build
 
-on: 
-  schedule:
-      - cron: "0 02 * * *"
+on: push
 
 jobs:
   build:
