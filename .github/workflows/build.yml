@@ -8,18 +8,10 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: css
-        run: curl -s -X POST "https://api.netlify.com/build_hooks/${TOKEN}"
-        env:
-          TOKEN: ${{ secrets.CSS_HOOK }}
       - name: functional
         run: curl -s -X POST "https://api.netlify.com/build_hooks/${TOKEN}"
         env:
           TOKEN: ${{ secrets.FUNCTIONAL_HOOK }}
-      - name: java
-        run: curl -s -X POST "https://api.netlify.com/build_hooks/${TOKEN}"
-        env:
-          TOKEN: ${{ secrets.JAVA_HOOK }}
       - name: javascript
         run: curl -s -X POST "https://api.netlify.com/build_hooks/${TOKEN}"
         env:
@@ -28,14 +20,6 @@ jobs:
         run: curl -s -X POST "https://api.netlify.com/build_hooks/${TOKEN}"
         env:
           TOKEN: ${{ secrets.KOTLIN_HOOK }}
-      - name: ml
-        run: curl -s -X POST "https://api.netlify.com/build_hooks/${TOKEN}"
-        env:
-          TOKEN: ${{ secrets.ML_HOOK }}
-      - name: opensource
-        run: curl -s -X POST "https://api.netlify.com/build_hooks/${TOKEN}"
-        env:
-          TOKEN: ${{ secrets.OPENSOURCE_HOOK }}
       - name: product
         run: curl -s -X POST "https://api.netlify.com/build_hooks/${TOKEN}"
         env:
@@ -60,3 +44,15 @@ jobs:
         run: curl -s -X POST "https://api.netlify.com/build_hooks/${TOKEN}"
         env:
           TOKEN: ${{ secrets.BEKK_HOOK }}
+      - name: talks
+        run: curl -s -X POST "https://api.netlify.com/build_hooks/${TOKEN}"
+        env:
+          TOKEN: ${{ secrets.TALKS_HOOK }}
+      - name: elm
+        run: curl -s -X POST "https://api.netlify.com/build_hooks/${TOKEN}"
+        env:
+          TOKEN: ${{ secrets.ELM_HOOK }}
+      - name: strategy
+        run: curl -s -X POST "https://api.netlify.com/build_hooks/${TOKEN}"
+        env:
+          TOKEN: ${{ secrets.STRATEGY_HOOK }}
