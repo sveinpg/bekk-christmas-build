@@ -56,3 +56,7 @@ jobs:
         run: curl -s -X POST "https://api.netlify.com/build_hooks/${TOKEN}"
         env:
           TOKEN: ${{ secrets.STRATEGY_HOOK }}
+      - name: dotnet
+        run: curl -s -X POST "https://api.netlify.com/build_hooks/${TOKEN}"
+        env:
+          TOKEN: ${{ secrets.DOTNET_HOOK }}
