@@ -4,17 +4,17 @@ const client = new NetlifyAPI(process.env.NETLIFY_ACCESS_TOKEN);
 const includedSites = [
   "security-christmas",
   "product-christmas",
-  "css-christmas",
   "ux-christmas",
-  "ml-christmas",
   "thecloud-christmas",
-  "java-christmas",
   "functional-christmas",
   "javascript-christmas",
   "kotlin-christmas",
   "react-christmas",
-  "opensource-christmas",
-  "bekk-christmas"
+  "bekk-christmas",
+  "talks-christmas",
+  "elm-christmas",
+  "strategy-christmas",
+  "dot-net-christmas",
 ];
 
 client
